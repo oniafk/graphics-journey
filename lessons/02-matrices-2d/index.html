@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 - Matrices 2D</title>
+    <style>
+      body { margin: 1rem; font-family: system-ui, sans-serif; }
+      canvas { border: 1px solid #ccc; max-width: 100%; }
+      fieldset { margin: 0 0 0.75rem; border: 2px solid var(--c); border-radius: 6px; }
+      legend { color: var(--c); font-weight: 600; }
+      .row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+      .vec { display: flex; align-items: center; gap: 0.25rem; }
+      .vec input { width: 4.5rem; }
+      .buttons { display: flex; gap: 0.5rem; margin-block: 0.75rem; }
+      #solution { background: #f6f0fb; border-left: 4px solid #7b2cbf; padding: 0.5rem 0.75rem; white-space: pre-wrap; }
+      #solution:empty { display: none; }
+    </style>
+  </head>
+  <body>
+    <a href="/">&larr; lessons</a>
+    <h1>02 - Matrices 2D</h1>
+    <p>
+      Every matrix is typed by its columns: <b>i</b> = where (1,0) lands, <b>j</b> = where (0,1) lands.
+    </p>
+
+    <div id="sets"></div>
+
+    <div class="buttons">
+      <button id="drawButton">draw</button>
+      <button id="compositionButton">calculate composition</button>
+    </div>
+    <pre id="solution"></pre>
+
+    <canvas id="stage" width="640" height="480"></canvas>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

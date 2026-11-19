@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 - Vectors 2D</title>
+    <style>
+      body {
+        margin: 1rem;
+        font-family: system-ui, sans-serif;
+      }
+      canvas {
+        border: 1px solid #ccc;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/">&larr; lessons</a>
+    <h1>01 - Vectors 2D</h1>
+    <div>
+      <p>vector a</p>
+      <div>
+        <p>x =</p>
+        <input type="number" id="aX" />
+        <p>y =</p>
+        <input type="number" id="aY" />
+      </div>
+
+      <p>vector b</p>
+      <div>
+        <p>x =</p>
+        <input type="number" id="bX" />
+        <p>y =</p>
+        <input type="number" id="bY" />
+      </div>
+      <button id="drawButton">draw</button>
+    </div>
+    <canvas id="stage" width="640" height="480"></canvas>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
